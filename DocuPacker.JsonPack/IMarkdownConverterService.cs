@@ -1,4 +1,4 @@
-﻿namespace DocuPacker.JsonPack;
+﻿namespace DocuPacker.JsonIndexPack;
 
 public interface IMarkdownConverterService
 {

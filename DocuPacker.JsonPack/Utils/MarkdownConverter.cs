@@ -1,7 +1,7 @@
 ﻿using YamlDotNet.Serialization;
 using JsonObject = DynaJson.JsonObject;
 
-namespace DocuPacker.JsonPack.Utils;
+namespace DocuPacker.JsonIndexPack.Utils;
 
 public class MarkdownConverter
 {

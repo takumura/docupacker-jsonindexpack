@@ -2,7 +2,7 @@
 using Polly;
 using Polly.Retry;
 
-namespace DocuPacker.JsonPack.Utils;
+namespace DocuPacker.JsonIndexPack.Utils;
 
 public class PollyRetryPolicy: IPollyRetryPolicy
 {

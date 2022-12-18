@@ -1,7 +1,7 @@
-﻿using DocuPacker.JsonPack.Utils;
+﻿using DocuPacker.JsonIndexPack.Utils;
 using Microsoft.Extensions.Logging;
 
-namespace DocuPacker.JsonPack;
+namespace DocuPacker.JsonIndexPack;
 
 public class MarkdownConverterService : IMarkdownConverterService
 {

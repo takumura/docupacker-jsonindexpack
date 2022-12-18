@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using Polly.Retry;
 
-namespace DocuPacker.JsonPack.Utils;
+namespace DocuPacker.JsonIndexPack.Utils;
 
 public class FileWriter
 {

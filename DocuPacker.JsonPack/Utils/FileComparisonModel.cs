@@ -1,4 +1,4 @@
-﻿namespace DocuPacker.JsonPack;
+﻿namespace DocuPacker.JsonIndexPack.Utils;
 
 public class FileComparisonModel
 {

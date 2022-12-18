@@ -1,4 +1,4 @@
-﻿namespace DocuPacker.JsonPack.Utils;
+﻿namespace DocuPacker.JsonIndexPack.Utils;
 
 public enum FileConversionModelStatusEnum
 {

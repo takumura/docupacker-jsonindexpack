@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 using Polly;
 using YamlDotNet.Core.Tokens;
 
-namespace DocuPacker.JsonPack.Utils;
+namespace DocuPacker.JsonIndexPack.Utils;
 
 public class FileManager
 {

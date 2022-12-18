@@ -1,6 +1,6 @@
 ﻿using CommandLine;
 
-namespace DocuPacker.JsonPack;
+namespace DocuPacker.JsonIndexPack;
 
 public class CommandLineOptions
 {

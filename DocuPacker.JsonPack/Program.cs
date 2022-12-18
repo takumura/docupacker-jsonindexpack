@@ -1,9 +1,9 @@
 ﻿using CommandLine;
-using DocuPacker.JsonPack.Utils;
+using DocuPacker.JsonIndexPack.Utils;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace DocuPacker.JsonPack;
+namespace DocuPacker.JsonIndexPack;
 
 public class Program
 {

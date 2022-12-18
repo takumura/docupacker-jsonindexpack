@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.FileSystemGlobbing;
 
-namespace DocuPacker.JsonPack.Utils;
+namespace DocuPacker.JsonIndexPack.Utils;
 
 public class FileMatcher
 {

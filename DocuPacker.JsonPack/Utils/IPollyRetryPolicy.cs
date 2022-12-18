@@ -1,6 +1,6 @@
 ﻿using Polly.Retry;
 
-namespace DocuPacker.JsonPack.Utils;
+namespace DocuPacker.JsonIndexPack.Utils;
 
 public interface IPollyRetryPolicy
 {
