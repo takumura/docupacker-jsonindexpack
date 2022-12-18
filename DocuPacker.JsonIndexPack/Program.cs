@@ -31,11 +31,11 @@ public class Program
 
                 if (options?.Verbose == true)
                 {
-                    builder.AddFilter("DocuPacker.JsonPack", LogLevel.Trace);
+                    builder.AddFilter("DocuPacker.JsonIndexPack", LogLevel.Trace);
                 }
                 else
                 {
-                    builder.AddFilter("DocuPacker.JsonPack", LogLevel.Information);
+                    builder.AddFilter("DocuPacker.JsonIndexPack", LogLevel.Information);
                 }
             })
             .AddSingleton<IMarkdownConverterService, MarkdownConverterService>()
