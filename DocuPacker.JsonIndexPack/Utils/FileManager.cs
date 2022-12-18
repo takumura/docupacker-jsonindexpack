@@ -2,8 +2,6 @@
 using System.Security.Cryptography;
 using System.Text;
 using Microsoft.Extensions.Logging;
-using Polly;
-using YamlDotNet.Core.Tokens;
 
 namespace DocuPacker.JsonIndexPack.Utils;
 

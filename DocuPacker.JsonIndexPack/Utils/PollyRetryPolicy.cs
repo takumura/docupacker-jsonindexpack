@@ -4,7 +4,7 @@ using Polly.Retry;
 
 namespace DocuPacker.JsonIndexPack.Utils;
 
-public class PollyRetryPolicy: IPollyRetryPolicy
+public class PollyRetryPolicy : IPollyRetryPolicy
 {
     readonly ILogger logger;
     public PollyRetryPolicy(ILogger<MarkdownConverterService> _logger)
