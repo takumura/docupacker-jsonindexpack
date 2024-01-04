@@ -2,6 +2,7 @@
 using DocuPacker.JsonIndexPack.Utils;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using ZLogger;
 
 namespace DocuPacker.JsonIndexPack;
 
@@ -15,27 +16,19 @@ public class Program
     public Program(CommandLineOptions? options = null)
     {
         var serviceCollection = new ServiceCollection()
-            .AddLogging(builder =>
+            .AddLogging(logging =>
             {
-                builder
-                    .AddFilter("Microsoft", LogLevel.Warning)
-                    .AddFilter("System", LogLevel.Warning)
-                    // see details on https://learn.microsoft.com/en-us/dotnet/core/extensions/console-log-formatter
-                    .AddSimpleConsole(options =>
-                    {
-                        options.IncludeScopes = true;
-                        options.SingleLine = true;
-                        options.TimestampFormat = "HH:mm:ss ";
-                    });
+                logging.ClearProviders();
+                logging.AddZLoggerConsole();
 
-
+                // bad manner but reviewing args and finding verbose options for rename/preview 
                 if (options?.Verbose == true)
                 {
-                    builder.AddFilter("DocuPacker.JsonIndexPack", LogLevel.Trace);
+                    logging.SetMinimumLevel(LogLevel.Trace);
                 }
                 else
                 {
-                    builder.AddFilter("DocuPacker.JsonIndexPack", LogLevel.Information);
+                    logging.SetMinimumLevel(LogLevel.Information);
                 }
             })
             .AddSingleton<IMarkdownConverterService, MarkdownConverterService>()
